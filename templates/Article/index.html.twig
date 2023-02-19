@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>New Article added</h1>
+    <p>The following product has been added:</p>
+    <ul>
+        <li>Name: {{ article.getTitle() }}</li>
+        <li>Description: {{ article.getContent() }}</li>
+        <!-- Add any other product properties you want to display here -->
+    </ul>
+{% endblock %}
